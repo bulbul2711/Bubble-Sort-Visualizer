@@ -1,0 +1,48 @@
+html, body {
+    height: 95%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .parentDiv {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(152, 225, 230);
+    border: 2px solid black;
+    justify-content: center;
+    height: 98%;
+    width: 98%;
+  }
+  
+  .innerDiv{
+    background-color: white;
+    width: 55px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    align-self: flex-end;
+  }
+  .startbtn {
+      display: flex;
+      border: 2px solid;
+      background-color: black;
+      margin: 12px;
+      position: relative;
+      left: 600px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+  }
+  @media (max-width: 600px) {
+    .parentDiv {
+      flex-wrap: wrap;
+    }
+  } 
+  @media (min-width: 600px) {
+    .startbtn {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }
